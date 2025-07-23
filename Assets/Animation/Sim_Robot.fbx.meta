@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 6ba208b9588fbd79bba515883858c9cd
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Sim_Robot(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis
+      parentName: Sim_Robot(Clone)
+      position: {x: -0, y: 1.06, z: 0}
+      rotation: {x: 0.025367064, y: -0.70272464, z: -0.025649434, w: 0.7105468}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_0
+      parentName: pelvis
+      position: {x: -0.0002, y: -0.04522, z: 0.000039999995}
+      rotation: {x: 0.49945396, y: 0.5017409, z: -0.5004959, w: -0.49830282}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint_1
+      parentName: pelvis
+      position: {x: -0, y: -1.06, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_2
+      parentName: pelvis
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hip_yaw_link
+      parentName: pelvis
+      position: {x: -0, y: -0.1742, z: 0.0875}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_3
+      parentName: left_hip_yaw_link
+      position: {x: -0.04923, y: 0.0071999994, z: 0.0001}
+      rotation: {x: -0.21919289, y: -0.641667, z: -0.233287, w: 0.69699}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hip_yaw
+      parentName: left_hip_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_4
+      parentName: left_hip_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_5
+      parentName: left_hip_yaw_link
+      position: {x: -0.067, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7070902, w: 0.70712334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hip_roll_link
+      parentName: left_hip_yaw_link
+      position: {x: 0.039468, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_6
+      parentName: left_hip_roll_link
+      position: {x: -0.0058, y: -0.00009, z: -0.00319}
+      rotation: {x: 0.70721024, y: 0.7018672, z: -0.07290751, w: -0.043824196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hip_roll
+      parentName: left_hip_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_7
+      parentName: left_hip_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_8
+      parentName: left_hip_roll_link
+      position: {x: -0, y: 0, z: -0.02}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hip_pitch_link
+      parentName: left_hip_roll_link
+      position: {x: -0, y: 0, z: 0.11536}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_9
+      parentName: left_hip_pitch_link
+      position: {x: 0.0074599995, y: -0.08193, z: -0.023459999}
+      rotation: {x: -0.051352266, y: 0.19238205, z: 0.016985413, w: 0.97982836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_hip_pitch
+      parentName: left_hip_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_10
+      parentName: left_hip_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_11
+      parentName: left_hip_pitch_link
+      position: {x: -0, y: -0.19, z: 0}
+      rotation: {x: -0, y: 0, z: 0.99887323, w: -0.047458075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_12
+      parentName: left_hip_pitch_link
+      position: {x: 0.02, y: -0.19, z: 0}
+      rotation: {x: 1, y: 6.123234e-17, z: 6.123234e-17, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_13
+      parentName: left_hip_pitch_link
+      position: {x: -0, y: 0, z: -0.07}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_knee_link
+      parentName: left_hip_pitch_link
+      position: {x: -0, y: -0.39999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_14
+      parentName: left_knee_link
+      position: {x: -0.0013599999, y: -0.1384, z: -0.0051199994}
+      rotation: {x: 0.034227084, y: -0.7778522, z: 0.041627657, w: 0.6261323}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_knee
+      parentName: left_knee_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_15
+      parentName: left_knee_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_16
+      parentName: left_knee_link
+      position: {x: 0.02, y: -0.19999999, z: 0}
+      rotation: {x: 1, y: 6.123234e-17, z: 6.123234e-17, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_17
+      parentName: left_knee_link
+      position: {x: -0, y: -0.114999995, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_ankle_link
+      parentName: left_knee_link
+      position: {x: -0, y: -0.39999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_18
+      parentName: left_ankle_link
+      position: {x: 0.06722, y: -0.044969995, z: 0.00015}
+      rotation: {x: 0.5031967, y: 0.43297198, z: 0.5657816, w: -0.48910075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_ankle
+      parentName: left_ankle_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_19
+      parentName: left_ankle_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_20
+      parentName: left_ankle_link
+      position: {x: -0.0075, y: -0.0505, z: 0}
+      rotation: {x: 0, y: 0, z: 0.773342, w: 0.63398904}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_21
+      parentName: left_ankle_link
+      position: {x: 0.0675, y: -0.0505, z: 0}
+      rotation: {x: 0, y: 0, z: 0.66519904, w: 0.7466661}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_22
+      parentName: left_ankle_link
+      position: {x: 0.14, y: -0.056, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hip_yaw_link
+      parentName: pelvis
+      position: {x: -0, y: -0.1742, z: -0.0875}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_23
+      parentName: right_hip_yaw_link
+      position: {x: -0.04923, y: 0.0071999994, z: -0.0001}
+      rotation: {x: -0.23328695, y: -0.6969901, z: -0.21919297, w: 0.64166695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hip_yaw
+      parentName: right_hip_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_24
+      parentName: right_hip_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_25
+      parentName: right_hip_yaw_link
+      position: {x: -0.067, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7070902, w: 0.70712334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hip_roll_link
+      parentName: right_hip_yaw_link
+      position: {x: 0.039468, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_26
+      parentName: right_hip_roll_link
+      position: {x: -0.0058, y: -0.00009, z: 0.00319}
+      rotation: {x: 0.70721024, y: 0.7018672, z: 0.072907425, w: 0.04382428}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hip_roll
+      parentName: right_hip_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_27
+      parentName: right_hip_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_28
+      parentName: right_hip_roll_link
+      position: {x: -0, y: 0, z: 0.02}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hip_pitch_link
+      parentName: right_hip_roll_link
+      position: {x: -0, y: 0, z: -0.11536}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_29
+      parentName: right_hip_pitch_link
+      position: {x: 0.0074599995, y: -0.08193, z: 0.023459999}
+      rotation: {x: 0.051352214, y: -0.19238214, z: 0.016985409, w: 0.97982836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_hip_pitch
+      parentName: right_hip_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_30
+      parentName: right_hip_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_31
+      parentName: right_hip_pitch_link
+      position: {x: -0, y: -0.19, z: 0}
+      rotation: {x: -0, y: 0, z: 0.99887323, w: -0.047458075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_32
+      parentName: right_hip_pitch_link
+      position: {x: 0.02, y: -0.19, z: 0}
+      rotation: {x: 1, y: 6.123234e-17, z: 6.123234e-17, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_33
+      parentName: right_hip_pitch_link
+      position: {x: -0, y: 0, z: 0.07}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_knee_link
+      parentName: right_hip_pitch_link
+      position: {x: -0, y: -0.39999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_34
+      parentName: right_knee_link
+      position: {x: -0.0013599999, y: -0.1384, z: 0.0051199994}
+      rotation: {x: 0.041627713, y: -0.6261323, z: 0.034227017, w: 0.7778522}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_knee
+      parentName: right_knee_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_35
+      parentName: right_knee_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_36
+      parentName: right_knee_link
+      position: {x: 0.02, y: -0.19999999, z: 0}
+      rotation: {x: 1, y: 6.123234e-17, z: 6.123234e-17, w: 6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_37
+      parentName: right_knee_link
+      position: {x: -0, y: -0.114999995, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_ankle_link
+      parentName: right_knee_link
+      position: {x: -0, y: -0.39999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_38
+      parentName: right_ankle_link
+      position: {x: 0.06722, y: -0.044969995, z: -0.00015}
+      rotation: {x: 0.56578165, y: 0.4891007, z: 0.50319666, w: -0.43297204}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_ankle
+      parentName: right_ankle_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_39
+      parentName: right_ankle_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_40
+      parentName: right_ankle_link
+      position: {x: -0.0075, y: -0.0505, z: 0}
+      rotation: {x: 0, y: 0, z: 0.773342, w: 0.63398904}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_41
+      parentName: right_ankle_link
+      position: {x: 0.0675, y: -0.0505, z: 0}
+      rotation: {x: 0, y: 0, z: 0.66519904, w: 0.7466661}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_42
+      parentName: right_ankle_link
+      position: {x: 0.14, y: -0.056, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: torso_link
+      parentName: pelvis
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_43
+      parentName: torso_link
+      position: {x: 0.000489, y: 0.20484, z: 0.002797}
+      rotation: {x: 0.0013080802, y: 0.00349105, z: 0.0028228902, w: 0.9999891}
+      scale: {x: 1, y: 1, z: 1}
+    - name: torso
+      parentName: torso_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_44
+      parentName: torso_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_45
+      parentName: torso_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HEAD
+      parentName: torso_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: HEAD
+      position: {x: 0.049999237, y: 0.64, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RGBCamera
+      parentName: head
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.12278781, y: 0.6963643, z: -0.12278781, w: 0.6963643}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Depth_Camera
+      parentName: RGBCamera
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: helmet
+      parentName: torso_link
+      position: {x: 0.044999998, y: 0.68, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: torso_1
+      parentName: torso_link
+      position: {x: -0, y: 0.25, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: TerrainEncoderCamera
+      parentName: torso_1
+      position: {x: 0.09199906, y: -0.100000024, z: 0}
+      rotation: {x: 0.2453944, y: 0.6631603, z: -0.2453944, w: 0.6631603}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip
+      parentName: torso_link
+      position: {x: -0, y: -0.049999997, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: imu
+      parentName: torso_link
+      position: {x: -0.04452, y: 0.27755997, z: -0.01891}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_pitch_link
+      parentName: torso_link
+      position: {x: 0.0055, y: 0.42999, z: 0.15535}
+      rotation: {x: -0.5966619, y: 0.016445877, z: -0.000965083, w: 0.80232364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_46
+      parentName: left_shoulder_pitch_link
+      position: {x: 0.0050449995, y: -0.015715, z: 0.053656995}
+      rotation: {x: -0.579236, y: 0.009364877, z: 0.020107199, w: 0.8148581}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_pitch
+      parentName: left_shoulder_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_47
+      parentName: left_shoulder_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_roll_link
+      parentName: left_shoulder_pitch_link
+      position: {x: -0.0055, y: -0.0165, z: 0.0565}
+      rotation: {x: 0.21643807, y: 0, z: -0, w: 0.97629637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_48
+      parentName: left_shoulder_roll_link
+      position: {x: 0.000679, y: -0.094076, z: 0.00115}
+      rotation: {x: -0.009171633, y: -0.6763839, z: -0.076665595, w: 0.732491}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_roll
+      parentName: left_shoulder_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_49
+      parentName: left_shoulder_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder
+      parentName: left_shoulder_roll_link
+      position: {x: -0, y: -0.006, z: -0.03}
+      rotation: {x: 0.5786401, y: 0, z: -0, w: 0.815583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_yaw_link
+      parentName: left_shoulder_roll_link
+      position: {x: -0, y: -0.1343, z: 0}
+      rotation: {x: -0.3312546, y: -0.030950587, z: -0.052879643, w: 0.94154996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_50
+      parentName: left_shoulder_yaw_link
+      position: {x: 0.01365, y: -0.16266, z: 0.002767}
+      rotation: {x: 0.0331229, y: -0.7087979, z: 0.04733619, w: 0.70304185}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_shoulder_yaw
+      parentName: left_shoulder_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_51
+      parentName: left_shoulder_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_52
+      parentName: left_shoulder_yaw_link
+      position: {x: -0, y: -0.024999999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_elbow_link
+      parentName: left_shoulder_yaw_link
+      position: {x: 0.0185, y: -0.19799998, z: 0}
+      rotation: {x: -0.0017480399, y: -0.03262505, z: -0.6497016, w: 0.7594869}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_53
+      parentName: left_elbow_link
+      position: {x: 0.15908, y: -0.015776, z: -0.000144}
+      rotation: {x: 0.72032696, y: 0.6841018, z: 0.0853115, w: -0.07652311}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_elbow
+      parentName: left_elbow_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_54
+      parentName: left_elbow_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_55
+      parentName: left_elbow_link
+      position: {x: 0.14, y: -0.0075, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6879337, w: 0.7257736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_56
+      parentName: left_elbow_link
+      position: {x: 0.28, y: -0.015, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_pitch_link
+      parentName: torso_link
+      position: {x: 0.0055, y: 0.42999, z: -0.15535}
+      rotation: {x: 0.21643807, y: 0, z: -0, w: 0.97629637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_57
+      parentName: right_shoulder_pitch_link
+      position: {x: 0.0050449995, y: -0.015715, z: -0.053656995}
+      rotation: {x: -0.8148581, y: -0.020107193, z: -0.009364873, w: 0.579236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_pitch
+      parentName: right_shoulder_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_58
+      parentName: right_shoulder_pitch_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_roll_link
+      parentName: right_shoulder_pitch_link
+      position: {x: -0.0055, y: -0.0165, z: -0.0565}
+      rotation: {x: 0.5339283, y: 0.0016829728, z: 0.0075917323, w: 0.8454941}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_59
+      parentName: right_shoulder_roll_link
+      position: {x: 0.000679, y: -0.094076, z: -0.00115}
+      rotation: {x: -0.07666552, y: -0.732491, z: -0.009171703, w: 0.6763839}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_roll
+      parentName: right_shoulder_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_60
+      parentName: right_shoulder_roll_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder
+      parentName: right_shoulder_roll_link
+      position: {x: -0, y: -0.006, z: 0.03}
+      rotation: {x: -0.5786401, y: 0, z: -0, w: 0.815583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_yaw_link
+      parentName: right_shoulder_roll_link
+      position: {x: -0, y: -0.1343, z: 0}
+      rotation: {x: 0.0005038081, y: 0.000047042948, z: -0.005414245, w: 0.9999852}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_61
+      parentName: right_shoulder_yaw_link
+      position: {x: 0.01365, y: -0.16266, z: -0.002767}
+      rotation: {x: 0.047336195, y: -0.70304185, z: 0.033122897, w: 0.7087979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_shoulder_yaw
+      parentName: right_shoulder_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_62
+      parentName: right_shoulder_yaw_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_63
+      parentName: right_shoulder_yaw_link
+      position: {x: -0, y: -0.024999999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_elbow_link
+      parentName: right_shoulder_yaw_link
+      position: {x: 0.0185, y: -0.19799998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: inertial_64
+      parentName: right_elbow_link
+      position: {x: 0.15908, y: -0.015776, z: 0.000144}
+      rotation: {x: 0.7203269, y: 0.6841018, z: -0.08531158, w: 0.07652319}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_elbow
+      parentName: right_elbow_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_65
+      parentName: right_elbow_link
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_66
+      parentName: right_elbow_link
+      position: {x: 0.14, y: -0.0075, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6879337, w: 0.7257736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geom_67
+      parentName: right_elbow_link
+      position: {x: 0.28, y: -0.015, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
