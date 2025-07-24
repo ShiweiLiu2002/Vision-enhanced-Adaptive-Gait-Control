@@ -65,19 +65,28 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Vision\Depth_Visualizer.cs" />
     <Compile Include="Assets\Scripts\Vision\ReplacementShaderEffect.cs" />
+    <Compile Include="Assets\Scripts\Vision\RenderTextureGrayscaleConverter.cs" />
+    <Compile Include="Assets\Scripts\Vision\MjHeightmapObservation.cs" />
     <Compile Include="Assets\Scripts\Vision\Detection_Visualizer.cs" />
+    <Compile Include="Assets\Scripts\Others\SaveRenderTextureToPNG.cs" />
+    <Compile Include="Assets\Scripts\Extensions\Vector3Extensions.cs" />
+    <Compile Include="Assets\Scripts\Vision\HeightMap_Visualizer.cs" />
+    <Compile Include="Assets\Scripts\Vision\MjRayGridTextureWriter.cs" />
     <Compile Include="Assets\Scripts\Others\ResetAnimationHandler.cs" />
     <Compile Include="Assets\Scripts\Vision\Depth_test.cs" />
     <Compile Include="Assets\Scripts\Vision\Detection.cs" />
-    <Compile Include="Assets\Scripts\Vision\Terrain_Encoder.cs" />
     <Compile Include="Assets\Scripts\Vision\Detection_inference.cs" />
+    <Compile Include="Assets\Scripts\Vision\TerrainEncoder_Visualizer.cs" />
     <Compile Include="Assets\Scripts\Others\DelayTriggerEventHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\mujoco.dll" />
     <None Include="Assets\Shaders\ShowDepth.shader" />
     <None Include="Assets\3D_Objs_models\Ball\Basketball\Info\info.txt" />
+    <None Include="Assets\Shaders\GrayScale.shader" />
+    <None Include="Assets\Terrains\H-field\mjmodel.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -521,7 +530,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-      <HintPath>C:\Users\62693\Documents\Courses\Personal Project\3rdParty\ml-agents-release_22\com.unity.ml-agents\Plugins\System.IO.Abstractions.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.ml-agents@3.0.0\Plugins\System.IO.Abstractions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
@@ -537,7 +546,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Google.Protobuf_Packed">
-      <HintPath>C:\Users\62693\Documents\Courses\Personal Project\3rdParty\ml-agents-release_22\com.unity.ml-agents\Plugins\Google.Protobuf_Packed.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.ml-agents@3.0.0\Plugins\Google.Protobuf_Packed.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
@@ -549,7 +558,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Grpc.Core">
-      <HintPath>C:\Users\62693\Documents\Courses\Personal Project\3rdParty\ml-agents-release_22\com.unity.ml-agents\Plugins\ProtoBuffer\Grpc.Core.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.ml-agents@3.0.0\Plugins\ProtoBuffer\Grpc.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil">
@@ -557,7 +566,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>C:\Users\62693\Documents\Courses\Personal Project\3rdParty\ml-agents-release_22\com.unity.ml-agents\Plugins\System.IO.Abstractions.TestingHelpers.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.ml-agents@3.0.0\Plugins\System.IO.Abstractions.TestingHelpers.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="HDF.PInvoke">
@@ -1052,6 +1061,10 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.ML-Agents.CommunicatorObjects">
+      <HintPath>Library\ScriptAssemblies\Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
@@ -1094,6 +1107,10 @@
     </Reference>
     <Reference Include="ModularAgents.Mujoco.SPD">
       <HintPath>Library\ScriptAssemblies\ModularAgents.Mujoco.SPD.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ML-Agents">
+      <HintPath>Library\ScriptAssemblies\Unity.ML-Agents.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ModularAgents.Mujoco.Editor.asmdef">
@@ -1196,6 +1213,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.ML-Agents.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ML-Agents.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Formats.Fbx.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1250,9 +1271,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.ML-Agents.CommunicatorObjects.csproj" />
-    <ProjectReference Include="Unity.ML-Agents.csproj" />
-    <ProjectReference Include="Unity.ML-Agents.Editor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
