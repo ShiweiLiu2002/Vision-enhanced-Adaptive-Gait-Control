@@ -10,7 +10,7 @@ using System.IO;
 public class H1AnimationClipGenerator : EditorWindow
 {
     public TextAsset csvFile;
-    public GameObject rigRoot;          // 这里就是 Unitree_h1
+    public GameObject rigRoot; 
     public float frameRate = 30f;
 
     private readonly string[] jointNames = new string[]

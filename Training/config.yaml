@@ -1,0 +1,24 @@
+behaviors:
+    DReCon:
+        trainer_type: ppo
+        hyperparameters:
+            num_epoch: 3
+            beta: 2e-4
+            epsilon: 0.1
+            learning_rate: 7e-5
+            batch_size: 4096 
+            buffer_size: 81920
+        summary_freq: 50000
+        checkpoint_interval: 500000
+        keep_checkpoints: 5
+        reward_signals:
+            extrinsic:
+                gamma: 0.995
+                strength: 1.0
+        network_settings:
+            num_layers: 3
+            hidden_units: 512
+            vis_encode_type: simple #CNN 
+            normalize: true
+        max_steps: 5e7
+        time_horizon: 1024

@@ -1,9 +1,0 @@
-<mujoco model="Unitree H1">
-  <compiler angle="radian"/>
-  <asset>
-    <hfield name="perlin_hfield" size="2.5 2.5 0.2 0.2" file="./height_field.png"/>
-  </asset>
-  <worldbody>
-    <geom type="hfield" hfield="perlin_hfield"/>
-  </worldbody>
-</mujoco>

@@ -36,6 +36,15 @@
       },
       "hash": "4c52b6abd06bcd448002336ee5bf9ade3381b3b1"
     },
+    "com.siccity.gltfutility": {
+      "version": "https://github.com/Siccity/GLTFUtility.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
+      },
+      "hash": "dfdc50830c201c53306fba4ab57ced763d2930c8"
+    },
     "com.unity.burst": {
       "version": "1.8.17",
       "depth": 1,
@@ -142,6 +151,13 @@
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
       "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -270,11 +286,11 @@
       "url": "https://packages.unity.com"
     },
     "org.mujoco": {
-      "version": "https://github.com/deepmind/mujoco.git?path=unity#3.1.3",
+      "version": "https://github.com/Balint-H/mujoco.git?path=unity#feature/unity-hfield-context",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "e2c14188adc8f6170aaf03a2f9c3424ab191d629"
+      "hash": "f8b884a9a429862539a87fc9966429523625c071"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
