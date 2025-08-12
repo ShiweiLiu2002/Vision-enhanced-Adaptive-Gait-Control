@@ -1,0 +1,11 @@
+mlagents-learn config-vision.yaml --env ./Vision_woodfloor/DReCon --force --run-id Vision_woodfloor --num-envs 16 --torch-device cuda
+mlagents-learn config-vision.yaml --env ./Vision_woodfloor/DReCon --resume --run-id Vision_woodfloor --num-envs 16 --torch-device cuda
+
+mlagents-learn config-vision.yaml --env ./Vision_Grassland/DReCon --force --run-id Vision_Grassland --num-envs 16 --torch-device cuda
+mlagents-learn config-vision.yaml --env ./Vision_Grassland/DReCon --resume --run-id Vision_Grassland --num-envs 16 --torch-device cuda
+
+mlagents-learn config-vision.yaml --env ./Vision_Rock/DReCon --force --run-id Vision_Rock --num-envs 16 --torch-device cuda
+mlagents-learn config-vision.yaml --env ./Vision_Rock/DReCon --resume --run-id Vision_Rock --num-envs 16 --torch-device cuda
+
+mlagents-learn config-vision.yaml --env ./Vision_Ice/DReCon --force --run-id Vision_Ice --num-envs 16 --torch-device cuda
+mlagents-learn config-vision.yaml --env ./Vision_Ice/DReCon --resume --run-id Vision_Ice --num-envs 16 --torch-device cuda

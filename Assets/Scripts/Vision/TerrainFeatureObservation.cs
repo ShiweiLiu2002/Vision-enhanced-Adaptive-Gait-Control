@@ -11,9 +11,9 @@ public class TerrainFeatureObservation : ObservationSource
     private bool EnableLogging;
     private TerrainClassification_inference terrainEncoder;
 
-    private float[] cachedLogits = new float[5];  // fallback vector
+    private float[] cachedLogits = new float[4];  // fallback vector
 
-    public override int Size => 5;
+    public override int Size => 4;
 
     private void Awake()
     {
@@ -27,20 +27,20 @@ public class TerrainFeatureObservation : ObservationSource
     public override void OnAgentStart()
     {
         // 可选：重置 cachedLogits
-        for (int i = 0; i < 5; i++) cachedLogits[i] = 0f;
+        for (int i = 0; i < 4; i++) cachedLogits[i] = 0f;
     }
 
     public override void FeedObservationsToSensor(VectorSensor sensor)
     {
         if (terrainEncoder != null && terrainEncoder.LatestLogits != null)
         {
-            Array.Copy(terrainEncoder.LatestLogits, cachedLogits, 5);
+            Array.Copy(terrainEncoder.LatestLogits, cachedLogits, 4);
         }
+        // for (int i = 0; i < 4; i++) cachedLogits[i] = 0f;
         if (EnableLogging)
         {
             Debug.Log("[TerrainFeatureObservation] Feeding logits: " + string.Join(", ", cachedLogits));
         }
-
         foreach (float val in cachedLogits)
         {
             sensor.AddObservation(val);

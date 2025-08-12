@@ -6,14 +6,14 @@ public class TerrainClassification_inference : MonoBehaviour
 {
     public RenderTexture renderTexture;           // RenderTexture source for inference
     public ModelAsset modelAsset;                 // ONNX model to be loaded
-    public string[] classNames = { "GrassLand", "Ice", "Mud", "Rock", "Woodfloor" };
+    public string[] classNames = { "GrassLand", "Ice", "Rock", "Woodfloor" };
 
     public bool enableLogging = true;             // If true, will print result to console
 
     private Texture2D inputTexture;
     private Worker worker;
     private Model model;
-    public float[] LatestLogits { get; private set; } = new float[5];  // original output（no softmax）
+    public float[] LatestLogits { get; private set; } = new float[4];  // original output（no softmax）
 
 
     void Start()
