@@ -1,0 +1,11 @@
+mlagents-learn config-VAGC.yaml --env ./VAGC_woodfloor/VAGC --force --run-id VAGC_woodfloor --num-envs 18 --torch-device cuda
+mlagents-learn config-VAGC.yaml --env ./VAGC_woodfloor/VAGC --resume --run-id VAGC_woodfloor --num-envs 18 --torch-device cuda
+
+mlagents-learn config-VAGC.yaml --env ./VAGC_Grassland/VAGC --force --run-id VAGC_Grassland --num-envs 1 --torch-device cuda
+mlagents-learn config-VAGC.yaml --env ./VAGC_Grassland/VAGC --resume --run-id VAGC_Grassland --num-envs 18 --torch-device cuda
+
+mlagents-learn config-VAGC.yaml --env ./VAGC_Rock/VAGC --force --run-id VAGC_Rock --num-envs 1 --torch-device cuda
+mlagents-learn config-VAGC.yaml --env ./VAGC_Rock/VAGC --resume --run-id VAGC_Rock --num-envs 16 --torch-device cuda
+
+mlagents-learn config-VAGC.yaml --env ./VAGC_Ice/VAGC --force --run-id VAGC_Ice --num-envs 1 --torch-device cuda
+mlagents-learn config-VAGC.yaml --env ./VAGC_Ice/VAGC --resume --run-id VAGC_Ice --num-envs 16 --torch-device cuda

@@ -1,1 +1,0 @@
-`V-DReCon-CopyfromBaseline.onnx` works when the heightmap and terrain encoder inputs are both `0`. This model only copies the weights and bias from baseline model when there's no visual input, and all weights/bias for vision are set to zero in CNN and `concat` layer. The corresponding checkpoint file is named as `checkpoint_zeroVision.pt` in this folder.

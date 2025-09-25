@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.ndimage import gaussian_filter
 from PIL import Image
 
-def generate_tile_heightmap(tile_count=30,
+def generate_tile_heightmap(tile_count=40,
                              tile_size=16,
                              smoothness=2.0,
                              height_range=(0.1, 1.0),
@@ -54,11 +54,11 @@ def generate_tile_heightmap(tile_count=30,
 # 示例调用
 if __name__ == "__main__":
     generate_tile_heightmap(
-        tile_count=30,
+        tile_count=40,
         tile_size=16,
         smoothness=1,
         height_range=(0.0, 1.0),
         final_size=(513, 513),
-        output_png="tiles_resized.png",
-        output_raw="tiles_resized.raw"
+        output_png="tilesmap_2.png",
+        output_raw="tilesmap_2.raw"
     )

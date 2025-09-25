@@ -1,8 +1,14 @@
 # Vision-enhanced-Adaptive-Gait-Control
-![Cover_img](./Recordings/cover.png)
+<div align="center">
+    <img src="./Recordings/cover.png" alt="Cover_img" width="60%"/>
+</div>
+
 This repository contains the implementation of a deep reinforcement learning framework for vision-based adaptive gait control of a humanoid robot (Unitree H1) in complex terrains(currently includes `ice surface`, `grassland`, normal `woodfloor` and `rock road`). This project was developed as part of the MSc in Human and Biological Robotics at Imperial College London.
 
-![Humanoid Walking Demo](./Recordings/combine.gif)
+<div align="center">
+    <img src="./Recordings/combine.gif" alt="Humanoid Walking Demo" width="100%"/>
+</div>
+
 *A trained agent navigating varied terrain in the [Unity/MuJoCo](https://mujoco.readthedocs.io/en/stable/unity.html#unity-plug-in) simulation environment. This result is preliminary, and I am currently further fine-tuning the gait policy.*
 
 ---
